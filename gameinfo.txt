@@ -1,0 +1,81 @@
+"GameInfo"
+{
+	game					"Source Filmmaker [Beta]"
+	title					"Source Filmmaker"
+	title2					"Source Filmmaker Engine"
+	type					multiplayer_only
+	gamelogo				1
+	developer				"Valve"
+	developer_url			"http://www.valvesoftware.com"
+	manual					"https://developer.valvesoftware.com/wiki/Source_Filmmaker"
+	icon					"resource/sfm"
+	icon_big				"resource/sfm_big"
+	
+	SupportsDX8				0
+	SupportsDX9				1
+	SupportsHDR				1
+	SupportsVR				0
+	SupportsXbox360			0
+	SupportsL4D				1
+	nodiffusebumplighting	0
+	hasportals				1
+	adv_options				1
+	
+	nomodels				1
+	nohimodel				1
+	nocrosshair				1
+	AdvCrosshair			0
+	nodegraph				0
+	nohud					0
+	e3_demo					0
+	
+	hidden_maps
+	{
+		"test_speakers"		1
+		"test_hardware"		1
+	}
+
+	GameData				"sfm.fgd"
+	InstancePath			"maps/instances/"
+	custom_nav_path			"maps/nav/"
+	
+	FileSystem
+	{
+		SteamAppId				1840
+		ToolsAppId				1840
+		
+		MaxFileHandles			8192
+		CacheSize				1073741824
+		MaxAppModelCacheSize	1073741824
+		StageSize				2147483647
+		MaxChunkSize			2147483647
+		VolatileCache			0
+
+		SearchPaths
+		{
+			Game				|gameinfo_path|.
+			Game				tf_movies
+			Game				tf
+			Game				left4dead2_movies
+			Game				hl2
+			Game				workshop
+			Game				custom
+			Game				my_content
+			Game				bin
+			Game				left4dead2
+			Game				cstrike
+			Game				dod
+			Game				portal
+			Game				platform
+			Game				ep2_workshop
+			Game				77_what_if
+			Game				infra_content
+		}
+	}
+
+	ToolsEnvironment
+	{
+		"Engine"	"SFM"
+		"ToolsDir"	"../sdktools"
+	}
+}
